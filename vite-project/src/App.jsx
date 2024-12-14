@@ -6,7 +6,8 @@ import Hero from "./component/hero";
 import JavascriptBlock from "./component/javascriptBlock";
 import ImmediatInvokedFunction from "./component/ImmediatInvokedFunction";
 import Map from "./component/map";
-import Conditional from "./component/conditional";                
+import Conditional from "./component/conditional";    
+import Event from "./component/Event";            
 const App = () => {
     const ItemObj = {
         name: 'item1',
@@ -32,6 +33,7 @@ const App = () => {
               <ImmediatInvokedFunction />
            <ContactForm />
            <Footer />
+           <Event />    
 
         </div>
     );
