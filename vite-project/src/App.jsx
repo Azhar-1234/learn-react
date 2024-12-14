@@ -8,6 +8,14 @@ import ImmediatInvokedFunction from "./component/ImmediatInvokedFunction";
 import Map from "./component/map";
 import Conditional from "./component/conditional";                
 const App = () => {
+    const ItemObj = {
+        name: 'item1',
+        tex:5+'euro',
+        price: 100,
+    };
+    function clickBtn() {
+        alert('hello world Btn');
+    }
     return (
         <div>
             <Fragment>
@@ -18,7 +26,7 @@ const App = () => {
             </Fragment>
            <Header />
               <Conditional />
-           <Hero />
+           <Hero title="Hero Title" desc="hero descriptio" item={ItemObj} clckBtn={clickBtn}/>
               <Map />
            <JavascriptBlock />
               <ImmediatInvokedFunction />
