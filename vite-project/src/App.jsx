@@ -8,6 +8,9 @@ import ImmediatInvokedFunction from "./component/ImmediatInvokedFunction";
 import Map from "./component/map";
 import Conditional from "./component/conditional";    
 import Event from "./component/Event";            
+import Hook from "./component/Hook";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap';
 const App = () => {
     const ItemObj = {
         name: 'item1',
@@ -27,6 +30,7 @@ const App = () => {
             </Fragment>
            <Header />
               <Conditional />
+            <Hook />
            <Hero title="Hero Title" desc="hero descriptio" item={ItemObj} clckBtn={clickBtn}/>
               <Map />
            <JavascriptBlock />
